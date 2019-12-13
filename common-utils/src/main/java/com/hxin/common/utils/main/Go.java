@@ -7,7 +7,6 @@ import com.hxin.common.utils.freemark.CreateFileUtils;
  * @author hxin
  */
 public class Go {
-
     //库名
     private static final String DATABASENAME = "steps_interest";
     //表名
@@ -24,5 +23,4 @@ public class Go {
     public static void main(String[] args) {
         CreateFileUtils.run(PATH, ENTITYPATH, MAPPERPATH, TABLENAME, DATABASENAME, DAOPATH);
     }
-
 }
