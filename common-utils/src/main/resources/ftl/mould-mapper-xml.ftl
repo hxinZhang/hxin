@@ -67,7 +67,7 @@
                 <#if key == "createDate">
                 now() ,
                 <#else>
-                <if test='${key}!=null'> `${filedColumnMap[key]}` , </if>
+                <if test='${key}!=null'> ${"#"}{${key}} , </if>
                 </#if>
                 </#if>
             </#list>
