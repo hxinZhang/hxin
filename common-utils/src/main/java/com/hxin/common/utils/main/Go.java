@@ -8,17 +8,17 @@ import com.hxin.common.utils.freemark.CreateFileUtils;
  */
 public class Go {
     //库名
-    private static final String DATABASENAME = "steps_interest";
+    private static final String DATABASENAME = "bookkeeping";
     //表名
-    private static final String TABLENAME = "admin_role_rel";
+    private static final String TABLENAME = "system_config";
     //生成文件存放路径
-    private static final String PATH = "E:\\template\\";
+    private static final String PATH = "C:\\hxin\\template";
     //entity 路径
-    private static final String ENTITYPATH = "com.steps.interest.background.entity.admin";
+    private static final String ENTITYPATH = "com.thewe.bookkeepingapi.entity.other";
     //dao 路径
-    private static final String DAOPATH = "com.steps.interest.background.dao.admin";
+    private static final String DAOPATH = "com.thewe.bookkeepingapi.dao.other";
     //mapper 路径
-    private static final String MAPPERPATH = "com.steps.interest.background.mapper.admin";
+    private static final String MAPPERPATH = "com.thewe.bookkeepingapi.mapper.other";
 
     public static void main(String[] args) {
         CreateFileUtils.run(PATH, ENTITYPATH, MAPPERPATH, TABLENAME, DATABASENAME, DAOPATH);
